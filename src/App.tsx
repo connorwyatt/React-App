@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import { ProductsActionsProvider } from './products/context/ProductsActions.provider'
-import { ProductList } from './products/ProductList'
+import { ContextProviders } from './ContextProviders'
+import { Router } from './Router'
 
 export const App: FC = () => (
-  <ProductsActionsProvider>
-    <ProductList/>
-  </ProductsActionsProvider>
+  <ContextProviders>
+    <Router />
+  </ContextProviders>
 )

@@ -1,4 +1,4 @@
 import { createContext } from 'react'
 import { ProductsActionsContextType } from './ProductsActionsContextType'
 
-export const ProductsActionsContext = createContext<ProductsActionsContextType>(null!);
+export const ProductsActionsContext = createContext<ProductsActionsContextType>(null!)

@@ -7,9 +7,9 @@ export const ProductsActionsProvider: FC = ({ children }) => {
   const { mutate } = useProducts()
   const value = useMemo<ProductsActionsContextType>(
     () => ({
-        refresh() {
-          mutate()
-        }
+      refresh () {
+        mutate()
+      }
     }),
     [mutate]
   )
@@ -19,4 +19,3 @@ export const ProductsActionsProvider: FC = ({ children }) => {
     </ProductsActionsContext.Provider>
   )
 }
-

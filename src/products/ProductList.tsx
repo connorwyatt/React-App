@@ -10,7 +10,7 @@ export const ProductList: FC = () => {
     <div>
       <h1>Products</h1>
       <div>
-        <button type={'button'} onClick={refresh}>Refresh</button>
+        <button type='button' onClick={refresh}>Refresh</button>
       </div>
       {!isValidating && (products != null) ? (
         products.map(p => (

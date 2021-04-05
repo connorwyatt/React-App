@@ -1,3 +1,3 @@
 export interface ProductsActionsContextType {
-    refresh(): void;
+  refresh: () => void
 }
