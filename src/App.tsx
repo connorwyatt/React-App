@@ -1,9 +1,11 @@
 import React, { FC } from 'react'
-import { ContextProviders } from './ContextProviders'
 import { Router } from './Router'
+import { QueryClientProvider } from './shared/QueryClientProvider'
+import { ReactQueryDevtools } from 'react-query/devtools'
 
 export const App: FC = () => (
-  <ContextProviders>
+  <QueryClientProvider>
     <Router />
-  </ContextProviders>
+    <ReactQueryDevtools />
+  </QueryClientProvider>
 )
